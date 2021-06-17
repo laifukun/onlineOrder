@@ -14,11 +14,11 @@ public class SignUpController {
     @Autowired
     private CustomerService customerService;
 
+    //sign up controller
     @RequestMapping(value ="/signup", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public void signUp(@RequestBody Customer customer) {
         customerService.signUp(customer);
     }
-    //sign u
 
 }
