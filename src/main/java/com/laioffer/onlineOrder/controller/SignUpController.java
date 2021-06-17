@@ -19,4 +19,6 @@ public class SignUpController {
     public void signUp(@RequestBody Customer customer) {
         customerService.signUp(customer);
     }
+    //sign up
+
 }
